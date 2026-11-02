@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15181C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="64dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="64dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            style="@style/Titulo"
+            android:text="@string/settings_title" />
+
+        <TextView style="@style/Rotulo" android:text="@string/lbl_url" />
+        <EditText
+            android:id="@+id/edit_url"
+            style="@style/Campo"
+            android:inputType="textUri" />
+
+        <TextView style="@style/Rotulo" android:text="@string/lbl_label" />
+        <EditText
+            android:id="@+id/edit_label"
+            style="@style/Campo"
+            android:hint="@string/hint_label"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView style="@style/Rotulo" android:text="@string/lbl_cache" />
+                <EditText
+                    android:id="@+id/edit_cache"
+                    style="@style/Campo"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView style="@style/Rotulo" android:text="@string/lbl_timeout" />
+                <EditText
+                    android:id="@+id/edit_timeout"
+                    style="@style/Campo"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_autostart"
+            style="@style/Opcao"
+            android:text="@string/chk_autostart" />
+
+        <CheckBox
+            android:id="@+id/check_home"
+            style="@style/Opcao"
+            android:text="@string/chk_home" />
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#20262D"
+            android:lineSpacingExtra="3dp"
+            android:padding="14dp"
+            android:textColor="#C9CED4"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_save" style="@style/Botao" android:text="@string/btn_save" />
+            <Button android:id="@+id/btn_cancel" style="@style/Botao" android:text="@string/btn_cancel" />
+            <Button android:id="@+id/btn_defaults" style="@style/Botao" android:text="@string/btn_defaults" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_overlay" style="@style/Botao" android:text="@string/btn_overlay" />
+            <Button android:id="@+id/btn_exit" style="@style/Botao" android:text="@string/btn_exit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

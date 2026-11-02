@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TV de Bordo</string>
+    <string name="waiting">Aguardando sinal…</string>
+    <string name="settings_title">TV de Bordo · Configurações</string>
+    <string name="lbl_url">Endereço do canal</string>
+    <string name="lbl_label">Identificação desta TV (aparece na tela sem sinal)</string>
+    <string name="hint_label">ex.: Carro 3 · TV 1</string>
+    <string name="lbl_cache">Buffer de rede (ms)</string>
+    <string name="lbl_timeout">Reconectar após (s) sem vídeo</string>
+    <string name="chk_autostart">Abrir sozinho ao ligar a box</string>
+    <string name="chk_home">Usar como tela inicial (modo quiosque)</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_defaults">Restaurar padrão</string>
+    <string name="btn_overlay">Permissão p/ abrir no boot</string>
+    <string name="btn_exit">Sair do app</string>
+</resources>
